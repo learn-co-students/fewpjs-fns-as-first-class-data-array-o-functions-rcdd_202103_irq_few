@@ -22,12 +22,9 @@ function unleashDog(dogName, dogBreed) {
   return (`Unleash ${dogName} the ${dogBreed}`);
 }
 
-var routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
+let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
 
-// function exerciseDog(dogName, dogBreed) {
-//   for (var i = 0; i < routine.length; i++) {
-//
-//   }
+
 
 function exerciseDog(dog, breed) {
   return routine.map(fn => fn(dog, breed))
